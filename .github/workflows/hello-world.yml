@@ -1,8 +1,8 @@
 name: hello-world
 on: push #whatever push on this repo, this workflow will trigger
-jobs:
-  my-job:
+jobs: # collection of jobs
+  my-job: #collection of steps
     runs-on: ubuntu-latest #github has same VM and containers
-    steps:
+    steps: #list of tasks
       - name: my-step
         run: echo "Hello World!"
